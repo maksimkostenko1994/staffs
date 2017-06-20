@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nodes</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <script src="/jquery/dist/jquery.js"></script>
+
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-resource/angular-resource.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+    <script src="/node/index.js"></script>
+    <script src="/app/main.js"></script>
+    <script src="/app/routes.js"></script>
+    <script src="/app/modules/list/service.js"></script>
+    <script src="/app/modules/list/listByName/controller.js"></script>
+    <script src="/app/modules/list/listByAge/controller.js"></script>
+    <script src="/app/modules/list/listByHeight/controller.js"></script>
+    <script src="/app/modules/list/listByWeight/controller.js"></script>
+    <script src="/app/modules/create/service.js"></script>
+    <script src="/app/modules/create/controller.js"></script>
+    <script src="/app/modules/find/service.js"></script>
+    <script src="/app/modules/update/service.js"></script>
+    <script src="/app/modules/update/controller.js"></script>
+    <script src="/app/modules/remove/service.js"></script>
+    <link rel="shortcut icon" href="/pictures/favicon.png" type="image/png">
+</head>
+<body>
+<div class="search">
+    <div class="container">
+        <div class="row">
+            <a href="#!/staffs/list/name">
+                <div class="col-md-7 logo">
+                    <img src="/pictures/favicon.png" height="40px" width="40px"/>
+                </div>
+            </a>
+
+            <div class="col-md-4" align="right">
+                <input class="search-text" type="text" placeholder="Enter node" ng-model="search">
+            </div>
+            <a href="#!/staffs/create">
+                <div class="col-md-1 menu-button" align="right">
+                    <span class="glyphicon glyphicon-pencil">Create</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<ng-view>
+</ng-view>
+
+<div align="middle" class="author">
+    <h4><span class="glyphicon glyphicon-copyright-mark"></span>created by Maksym Kostenko</h4>
+</div>
+</body>
+</html>

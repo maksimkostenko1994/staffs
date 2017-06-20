@@ -1,0 +1,21 @@
+.table-center {
+    margin-top: 100px;
+}
+
+td {
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+}
+
+.head-td {
+    width: 100px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+table {
+    margin-bottom: 50px;
+    width: 800px;
+}

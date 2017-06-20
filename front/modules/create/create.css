@@ -1,0 +1,35 @@
+.create {
+    margin-right: 275px;
+}
+
+.create-label {
+    text-align: right;
+    color: black;
+    margin-top: 15px;
+}
+
+.create-text{
+    width: 400px;
+    height: 25px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.create-button{
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.create-button:hover{
+    background: cadetblue;
+    border-color: white;
+    color: black;
+}

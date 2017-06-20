@@ -1,0 +1,126 @@
+<form class="form-horizontal" name="staffCreation" style="overflow-x: hidden;">
+
+
+    <!-- Form Name -->
+    <div align="center">
+        <label>Update staff</label>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="nameStaff">Name:</label>
+        <div class="col-md-4">
+            <input id="nameStaff" name="nameStaff" type="text" placeholder="Enter your name"
+                   ng-class="{'has-error': staffCreation.nameStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.name">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="ageStaff">Age:</label>
+        <div class="col-md-4">
+            <input id="ageStaff" name="ageStaff" type="text" placeholder="Enter your age"
+                   ng-class="{'has-error': staffCreation.ageStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.age">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="weightStaff">Weight:</label>
+        <div class="col-md-4">
+            <input id="weightStaff" name="weightStaff" type="text" placeholder="Enter your weight"
+                   ng-class="{'has-error': staffCreation.weightStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.weight">
+
+        </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="heightStaff">Height:</label>
+        <div class="col-md-4">
+            <input id="heightStaff" name="heightStaff" type="text" placeholder="Enter your height"
+                   ng-class="{'has-error': staffCreation.heightStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.height">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="earnStaff">Salary:</label>
+        <div class="col-md-4">
+            <input id="earnStaff" name="earnStaff" type="text" placeholder="Enter your salary"
+                   ng-class="{'has-error': staffCreation.earnStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.earn">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="addressStaff">Address:</label>
+        <div class="col-md-4">
+            <input id="addressStaff" name="addressStaff" type="text" placeholder="Enter your address"
+                   ng-class="{'has-error': staffCreation.addressStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.address">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="passportStaff">Passport data:</label>
+        <div class="col-md-4">
+            <input id="passportStaff" name="passportStaff" type="text" placeholder="Enter your passport data"
+                   ng-class="{'has-error': staffCreation.passportStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.passport">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="bornStaff">Place of born:</label>
+        <div class="col-md-4">
+            <input id="bornStaff" name="bornStaff" type="text" placeholder="Enter your place of born"
+                   ng-class="{'has-error': staffCreation.bornStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.born">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="descriptionStaff">Description:</label>
+        <div class="col-md-4">
+            <input id="descriptionStaff" name="descriptionStaff" type="text" placeholder="Enter your description"
+                   ng-class="{'has-error': staffCreation.descriptionStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.description">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="notesStaff">Notes:</label>
+        <div class="col-md-4">
+            <input id="notesStaff" name="notesStaff" type="text" placeholder="Enter some notes"
+                   ng-class="{'has-error': staffCreation.notesStaff && submitted}"
+                   class="form-control input-md" ng-model="staff.notes">
+
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="update"></label>
+        <div class="col-md-4">
+            <button id="update" name="update" type="submit" class="btn btn-success" ng-click="updateStaff(staff)">Update</button>
+        </div>
+        <div class="col-md-4">
+            <button id="remove" name="remove" type="submit" class="btn btn-success" ng-click="removeStaff(staff)">Remove</button>
+        </div>
+    </div>
+
+</form>

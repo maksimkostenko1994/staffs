@@ -1,0 +1,138 @@
+body {
+    background: darkgray;
+}
+
+.main {
+    margin-top: 175px;
+}
+
+.logo {
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu-button {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: darkgray;
+}
+
+.menu-button:hover {
+    background: #4F4F4F;
+    color: white;
+}
+
+
+.search {
+    background: #363636;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.search-text {
+    border: none;
+    background: #1C1C1C;
+    margin-top: 12px;
+    padding-left: 5px;
+    width: 160px;
+    height: 24px;
+}
+
+.search-text:focus {
+    border: 1px solid black;
+    background: white;
+}
+
+.search-button {
+    background: darkblue;
+    margin-top: 12px;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+.search-button:hover {
+    background: cadetblue;
+    border: 1px solid white;
+}
+
+.current-node {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid black;
+    text-align: center;
+}
+
+.buttons {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+}
+
+.button-previous {
+    background: rgba(0,0,0,0.4);
+    border: 1px solid black;
+    color: white;
+    width: 147px;
+    height: 25px;
+    margin-top: 40px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button-previous:hover {
+    color: black;
+}
+
+.button-next {
+    background: rgba(0,0,0,0.4);
+    border: 1px solid black;
+    color: white;
+    width: 112px;
+    text-align: right;
+    height: 25px;
+    margin-top: 40px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button-next:hover {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    background: white;
+    color: black;
+}
+
+.previous-node {
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.next-node {
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.author {
+    border-top: 1px solid black;
+    width: 100%;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}

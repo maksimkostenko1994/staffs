@@ -1,0 +1,125 @@
+<link rel="stylesheet" type="text/css" href="/modules/list/list.css">
+
+<div class="container table-center">
+
+    <div class="row">
+        <div class="col-md-1">
+            <div class="row">
+                <a href="#!/staffs/list/name" ng-click="prevSlide()">
+                    <div class="col-md-12 button-previous">
+                        <span class="glyphicon glyphicon-chevron-left"></span>previous by name
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#!/staffs/list/age" ng-click="prevSlide()">
+                    <div class="col-md-12 button-previous">
+                        <span class="glyphicon glyphicon-chevron-left"></span>previous by age
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#!/staffs/list/width" ng-click="prevSlide()">
+                    <div class="col-md-12 button-previous">
+                        <span class="glyphicon glyphicon-chevron-left"></span>previous by weight
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#!/staffs/list/height" ng-click="prevSlide()">
+                    <div class="col-md-12 button-previous">
+                        <span class="glyphicon glyphicon-chevron-left"></span>previous by height
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-10" align="center">
+            <table>
+                <tbody ng-repeat="staff in staffs | orderBy:'age' | filter:search"
+                       ng-hide="!isCurrentSlideIndex($index)"
+                       ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);">
+                <tr>
+                    <td class="head-td">Name</td>
+                    <td>{{staff.name}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Age</td>
+                    <td>{{staff.age | date: 'yyyy-MM-dd'}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Weight</td>
+                    <td>{{staff.weight}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Height</td>
+                    <td>{{staff.height}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Salary</td>
+                    <td>{{staff.earn}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Passport data</td>
+                    <td>{{staff.passport}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Address</td>
+                    <td>{{staff.address}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Place of born</td>
+                    <td>{{staff.born}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">About</td>
+                    <td>{{staff.description}}</td>
+                </tr>
+                <tr>
+                    <td class="head-td">Description</td>
+                    <td>{{staff.notes}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="{{editPath}}/{{staff.id}}">
+                            <div class="buttons">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-1">
+            <div class="row">
+                <a href="#!/staffs/list/name" ng-click="nextSlide()">
+                    <div class="col-md-12 button-next">
+                        next by name<span class="glyphicon glyphicon-chevron-right"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#!/staffs/list/age" ng-click="nextSlide()">
+                    <div class="col-md-12 button-next">
+                        next by age<span class="glyphicon glyphicon-chevron-right"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#!/staffs/list/weight" ng-click="nextSlide()">
+                    <div class="col-md-12 button-next">
+                        next by weight<span class="glyphicon glyphicon-chevron-right"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#!/staffs/list/height" ng-click="nextSlide()">
+                    <div class="col-md-12 button-next">
+                        next by height<span class="glyphicon glyphicon-chevron-right"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

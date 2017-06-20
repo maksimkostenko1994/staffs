@@ -1,0 +1,95 @@
+<link rel="stylesheet" type="text/css" href="/modules/create/create.css">
+
+<div align="center">
+    <h2>Node creation</h2>
+</div>
+<div class="container create">
+    <form name="staffCreation">
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Name:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.nameStaff && submitted}">
+                <input class="create-text" type="text" name="nameStaff" ng-model="staff.name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Age:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.ageStaff && submitted}">
+                <input class="create-text" type="text" name="ageStaff" ng-model="staff.age">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Weight:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.weightStaff && submitted}">
+                <input class="create-text" type="text" name="weightStaff" ng-model="staff.weight">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Height:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.heightStaff.$invalid && submitted}">
+                <input class="create-text" type="text" name="heightStaff" ng-model="staff.height">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Salary:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.earnStaff && submitted}">
+                <input class="create-text" type="text" name="earnStaff" ng-model="staff.earn">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Address:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.addressStaff && submitted}">
+                <input class="create-text" type="text" name="addressStaff" ng-model="staff.address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Passport data:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.passportStaff && submitted}">
+                <input class="create-text" type="text" name="passportStaff" ng-model="staff.passport">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Place of born:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.bornStaff && submitted}">
+                <input class="create-text" type="text" name="bornStaff" ng-model="staff.born">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Description:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.descriptionStaff && submitted}">
+                <input class="create-text" type="text" name="descriptionStaff" ng-model="staff.description">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 create-label">
+                <span>Notes:</span>
+            </div>
+            <div class="col-lg-6" ng-class="{ 'has-error': staffCreation.notesStaff && submitted}">
+                <input class="create-text" type="text" name="notesStaff" ng-model="staff.notes">
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-lg-12">
+                <a href="{{createPath}}"><input class="create-button" type="submit" ng-click="save(staff)" value="Save"/></a>
+            </div>
+        </div>
+    </form>
+
+</div>
